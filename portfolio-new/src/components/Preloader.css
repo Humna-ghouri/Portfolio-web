@@ -1,3 +1,4 @@
+/* src/components/Preloader.css */
 #preloader {
   position: fixed;
   top: 0;
@@ -61,4 +62,19 @@
 @keyframes blink {
   0% { opacity: 0.3; }
   100% { opacity: 0.7; }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .loader-text {
+    font-size: 1.2rem;
+  }
+  
+  .progress-bar {
+    width: 250px;
+  }
+  
+  .binary-code {
+    font-size: 0.7rem;
+  }
 }

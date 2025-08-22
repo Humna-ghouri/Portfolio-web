@@ -1,0 +1,122 @@
+/* src/components/Particle.css */
+.particles-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.particles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.particle {
+  position: absolute;
+  background-color: #00ff41;
+  border-radius: 50%;
+  opacity: 0.6;
+  animation: float 15s infinite linear;
+}
+
+/* Create multiple particles with different properties */
+.particle:nth-child(1) {
+  width: 3px;
+  height: 3px;
+  top: 10%;
+  left: 20%;
+  animation-duration: 20s;
+  animation-delay: 0s;
+}
+
+.particle:nth-child(2) {
+  width: 2px;
+  height: 2px;
+  top: 30%;
+  left: 60%;
+  animation-duration: 25s;
+  animation-delay: 2s;
+}
+
+.particle:nth-child(3) {
+  width: 4px;
+  height: 4px;
+  top: 70%;
+  left: 40%;
+  animation-duration: 18s;
+  animation-delay: 4s;
+}
+
+.particle:nth-child(4) {
+  width: 3px;
+  height: 3px;
+  top: 20%;
+  left: 80%;
+  animation-duration: 22s;
+  animation-delay: 1s;
+}
+
+.particle:nth-child(5) {
+  width: 2px;
+  height: 2px;
+  top: 60%;
+  left: 10%;
+  animation-duration: 28s;
+  animation-delay: 3s;
+}
+
+/* Add more particles as needed... */
+
+@keyframes float {
+  0% {
+    transform: translate(0, 0) rotate(0deg);
+    opacity: 0.6;
+  }
+  25% {
+    transform: translate(20px, 40px) rotate(90deg);
+    opacity: 0.8;
+  }
+  50% {
+    transform: translate(40px, 80px) rotate(180deg);
+    opacity: 0.4;
+  }
+  75% {
+    transform: translate(20px, 120px) rotate(270deg);
+    opacity: 0.7;
+  }
+  100% {
+    transform: translate(0, 160px) rotate(360deg);
+    opacity: 0.6;
+  }
+}
+
+/* Matrix rain effect */
+.particles-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: 
+    linear-gradient(to right, rgba(0, 255, 65, 0.03) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 255, 65, 0.03) 1px, transparent 1px);
+  background-size: 40px 40px;
+  pointer-events: none;
+}
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+  .particle {
+    animation-duration: 10s !important;
+  }
+  
+  .particles-container::before {
+    background-size: 30px 30px;
+  }
+}
