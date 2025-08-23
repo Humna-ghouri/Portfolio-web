@@ -1,7 +1,6 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
-import Badge from "react-bootstrap/Badge";
 import { BsGithub, BsBoxArrowUpRight } from "react-icons/bs";
 
 function ProjectCards(props) {
