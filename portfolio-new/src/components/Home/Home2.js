@@ -93,14 +93,14 @@ function Home2() {
                 </a>
               </li>
               <li className="social-icons">
-                <a
-                  href="#"
-                  onClick={handleEmailClick}
-                  className="social-icon"
-                  title="humnaghouri001@gmail.com"
-                >
-                  <AiFillMail />
-                </a>
+               <a
+  href="javascript:void(0)"
+  onClick={handleEmailClick}
+  className="social-icon"
+  title="humnaghouri001@gmail.com"
+>
+  <AiFillMail />
+</a>
               </li>
             </ul>
             <p className="email-text">
