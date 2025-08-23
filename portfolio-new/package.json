@@ -53,7 +53,5 @@
       "last 1 safari version"
     ]
   },
-  "devDependencies": {
-    // Keep other dev dependencies here if you have any
-  }
+  "devDependencies": {}
 }
