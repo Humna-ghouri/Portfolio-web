@@ -159,8 +159,8 @@ function Home() {
         
         .terminal-comment {
           font-family: 'Courier New', monospace;
-          color: #4a7856;
-          font-size: 1.1rem;
+          color: #a5d0b0ff;
+          font-size: 1.7rem;
           margin-bottom: 30px;
           line-height: 1.6;
         }

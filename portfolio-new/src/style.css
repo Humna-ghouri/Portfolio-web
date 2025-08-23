@@ -33,23 +33,6 @@ button:focus {
 /* --------- */
 /*  Preloader */
 /* --------- */
-#preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: 999999;
-  background-color: #0a192f; /* Changed to dark blue-green */
-  background-image: url(./Assets/pre.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
-/* If you want a pure green background */
-#preloader.green-theme {
-  background-color: #001a00; /* Dark green */
-}
 
 /* Or if you want a matrix-style background */
 #preloader.matrix-theme {
