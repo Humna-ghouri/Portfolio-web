@@ -1,3 +1,4 @@
+
 import React from "react";
 import Card from "react-bootstrap/Card";
 
@@ -73,7 +74,93 @@ function AboutCard() {
           </p>
         </div>
       </Card.Body>
-      {/* Styles remain unchanged */}
+            <style jsx>{`
+        .cyber-card {
+          background: rgba(18, 25, 47, 0.7) !important;
+          border: 1px solid #00ff41 !important;
+          border-radius: 8px !important;
+          overflow: hidden;
+          backdrop-filter: blur(10px);
+          box-shadow: 0 0 25px rgba(0, 255, 65, 0.2);
+        }
+        
+        .card-header {
+          background: rgba(0, 255, 65, 0.1);
+          padding: 12px 20px;
+          border-bottom: 1px solid #00ff41;
+          display: flex;
+          align-items: center;
+        }
+        
+        .header-dots {
+          display: flex;
+          gap: 8px;
+          margin-right: 15px;
+        }
+        
+        .dot {
+          display: inline-block;
+          width: 12px;
+          height: 12px;
+          border-radius: 50%;
+        }
+        
+        .dot.red { background: #ff5f57; }
+        .dot.yellow { background: #ffbd2e; }
+        .dot.green { background: #28c940; }
+        
+        .header-title {
+          font-family: 'Share Tech Mono', monospace;
+          color: #00ff41;
+          font-size: 0.9rem;
+        }
+        
+        .cyber-text {
+          font-family: 'Fira Code', 'Courier New', monospace;
+          font-size: 0.95rem;
+          line-height: 1.6;
+          color: #e0e0e0;
+        }
+        
+        .comment {
+          color: #5a6268;
+          font-style: italic;
+        }
+        
+        .var {
+          color: #ff6b6b;
+        }
+        
+        .name {
+          color: #4fc3f7;
+        }
+        
+        .key {
+          color: #ffa726;
+        }
+        
+        .string {
+          color: #98c379;
+        }
+        
+        .method {
+          color: #c678dd;
+        }
+        
+        .tag {
+          color: #00ff41;
+          font-size: 0.9rem;
+          display: block;
+          margin-top: 10px;
+        }
+        
+        .quote {
+          border-left: 3px solid #00ff41;
+          padding-left: 15px;
+          margin-top: 20px;
+        }
+      `}</style>
+
     </Card>
   );
 }
