@@ -92,16 +92,16 @@ function Home2() {
                   <AiFillInstagram />
                 </a>
               </li>
-              <li className="social-icons">
-               <a
-  href="javascript:void(0)"
-  onClick={handleEmailClick}
-  className="social-icon"
-  title="humnaghouri001@gmail.com"
->
-  <AiFillMail />
-</a>
-              </li>
+<li className="social-icons">
+  <button
+    onClick={handleEmailClick}
+    className="social-icon"
+    title="humnaghouri001@gmail.com"
+    type="button"
+  >
+    <AiFillMail />
+  </button>
+</li>
             </ul>
             <p className="email-text">
               <span className="accent-green">→ </span>
